@@ -1,0 +1,14 @@
+266:  const [salesRecords, setSalesRecords] = useState<ShopmineSale[]>([]);
+2594:  }, [salesRecords, adRecords, purchaseRecords, startDate, endDate, selectedMarket, selectedAccount]);
+3532:    const filteredSales = salesRecords.filter(record => {
+3646:    if (salesRecords.length === 0) {
+3650:    const ws = XLSX.utils.json_to_sheet(salesRecords);
+7960:                        {!isSalesLoading && dashboardMetrics?.totalRevenue === 0 && salesRecords.length > 0 && (
+8048:                              ) : salesRecords.length > 0 ? (
+8050:                                  <ComposedChart data={salesRecords.slice(0, 15).reverse().map(r => ({
+8082:                              ) : salesRecords.length > 0 ? (
+8087:                                        salesRecords.reduce((acc, r) => {
+8152:                                ) : salesRecords.length > 0 ? (
+8153:                                  salesRecords.slice(0, 10).map((record, idx) => (
+8560:                                        {Array.from(new Set(salesRecords.map(r => r.mall_name || '기타')))
+8584:                                          salesRecords
